@@ -35,52 +35,36 @@ namespace Regex
             //// get calculated hash value
             //byte[] hash2 = sha.Hash;
 
-            MyClass1 myc = new MyClass1();
-            myc.MyMethod(5);
-            //Type type = typeof(MyClass1);
-
-            MethodInfo mInfo = myc.GetType().GetMethod("MyMethod");
-            System.Attribute[] attrs = System.Attribute.GetCustomAttributes(mInfo, typeof(MyAttribute));
-            foreach (System.Attribute attr in attrs)
+            // Display powers of 2 up to the exponent of 8:
+            foreach (int i in Power(2, 8))
             {
-                Console.WriteLine();
+                Console.Write("{0} ", i);
             }
+
+
+
+
+
             Console.ReadLine();
 
 
         }
 
-    }
 
-    
-    public class MyClass1
-    {
-        [My("This is an example attribute.")]
-        public void MyMethod(int i)
+        public static System.Collections.Generic.IEnumerable<int> Power(int number, int exponent)
         {
-            return;
-        }
-    }
+            int result = 1;
 
-    // Define a custom attribute with one named parameter.
-    [AttributeUsage(AttributeTargets.All)]
-    public class MyAttribute : Attribute
-    {
-        private string myName;
-        public MyAttribute(string name)
-        {
-            myName = name;
-            Console.WriteLine(myName);
-        }
-        public string Name
-        {
-            get
+            for (int i = 0; i < exponent; i++)
             {
-                return myName;
+                result = result * number;
+                yield return result;
+                Console.WriteLine("im in between results");
             }
         }
-
-
     }
 
+   
 }
+
+

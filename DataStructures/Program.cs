@@ -78,9 +78,24 @@ namespace DataStructures
 
             #region MyLinkedList            
 
-            MyLinkedList<int> linkedList = new MyLinkedList<int>();
-            linkedList.Add(4);
-            linkedList.Add(6);
+            MyLinkedList<string> myLinkedList = new MyLinkedList<string>();
+            myLinkedList.Add("and");
+            myLinkedList.Add("what");
+            myLinkedList.Add("else");
+
+            foreach (var i in myLinkedList)
+            {
+                Console.WriteLine(i);
+            }
+
+            myLinkedList.Remove("what");
+
+            Console.WriteLine("List after removing values");
+
+            foreach (var i in myLinkedList)
+            {
+                Console.WriteLine(i);
+            }
 
             #endregion
             Console.ReadLine();

@@ -9,66 +9,103 @@
 
     class MyLinkedList<T> : IEnumerable<T>
     {
-        Node<T> Head;
+        private Node<T> Head;
 
-        Node<T> CurrentNode;
-
-        // set arbitary 
-        Node<T>[] LinkedList;
-
-        public MyLinkedList()
-        {
-            LinkedList = new Node<T>[20];
-        }
-
-        bool IsFirstAdd = true;
+        private Node<T> CurrentNode;       
 
         public void Add(T data)
         {
-            if (IsFirstAdd)
-            {
-                Head = new Node<T>(data);
-                // return;
+            // create new node for incoming data
+            Node<T> newNode = new Node<T>(data);
 
-                // set current node to the head
-                CurrentNode = Head;
+            if (Head == null)
+            {
+                Head = newNode;
+                return;
             }
 
-            IsFirstAdd = false;
+            // set current node to the head
+            CurrentNode = Head;
 
             // move through the nodes to find last node
             while (CurrentNode.Next != null)
             {
-                // if next node is not null, move current to the next node and recheck
+                // if next node is not null, move current Node to the next Node and recheck
                 CurrentNode = CurrentNode.Next;
             }
 
-            CurrentNode.Next = new Node<T>(data);
-            CurrentNode = CurrentNode.Next;
+            CurrentNode.Next = new Node<T>(data);           
+        }
+
+        public void AddFirst(T data)
+        {
+            Node<T> newNode = new Node<T>(data);
+            newNode.Next = Head;
+            Head = newNode;
         }
 
         public void Remove(T data)
         {
+            if(Head.Data.Equals(data))
+            {
+                Head = Head.Next;
+                return;
+            }
 
+            CurrentNode = Head;
+
+            // move through the nodes 
+            while (CurrentNode.Next != null)
+            {
+                // check the next node
+                if(CurrentNode.Next.Data.Equals(data))
+                {                    
+                    CurrentNode.Next = CurrentNode.Next.Next;
+                    return;
+                }
+
+                // if next node is not null, move current Node to the next Node and recheck
+                CurrentNode = CurrentNode.Next;
+            }
         }
 
-        public void Get(T data)
+        public Node<T> Find(T searchValue)
         {
+            // Begin search from the First node
+            Node<T> searchNode = Head;
 
+            while(searchNode != null )
+            {
+                if(searchNode.Data.Equals(searchValue))
+                {
+                    return searchNode;
+                }
+                else
+                {
+                    searchNode = searchNode.Next;
+                }                
+            }
+
+            return null;
         }
-
+        
         public IEnumerator<T> GetEnumerator()
         {
-            for(int i = 0; i < LinkedList.Length; i++)
+            Node<T> searchNode = Head;
+
+            while (searchNode != null)
             {
-                yield return LinkedList[i].Data;
+                yield return searchNode.Data;
+
+                searchNode = searchNode.Next;
             }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return this.GetEnumerator();
+            return GetEnumerator();
         }
 
+        
     }
 }

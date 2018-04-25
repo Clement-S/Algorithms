@@ -8,7 +8,7 @@
 
     class MyMap<K, V>
     {
-        public const int BUCKETSIZE = 20;
+        private const int BUCKETSIZE = 20;
 
         private List<K> Keys = new List<K>();
                
