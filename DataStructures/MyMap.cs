@@ -73,6 +73,7 @@
 
             var bucketIndex = GetHashCode(key);
 
+            // assuming the value is in first position in the list
             Bucket[bucketIndex][0] = default(V);
 
             Keys.Remove(key);

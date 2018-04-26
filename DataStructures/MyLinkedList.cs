@@ -39,8 +39,10 @@
 
         public void AddFirst(T data)
         {
-            Node<T> newNode = new Node<T>(data);
-            newNode.Next = Head;
+            Node<T> newNode = new Node<T>(data)
+            {
+                Next = Head
+            };
             Head = newNode;
         }
 
@@ -57,7 +59,7 @@
             // move through the nodes 
             while (CurrentNode.Next != null)
             {
-                // check the next node
+                // check the next node if it equals the data
                 if(CurrentNode.Next.Data.Equals(data))
                 {                    
                     CurrentNode.Next = CurrentNode.Next.Next;
@@ -104,8 +106,6 @@
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
-        }
-
-        
+        }        
     }
 }
