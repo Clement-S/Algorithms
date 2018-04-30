@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceTest", "Tracing\TraceT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regex", "Regex\Regex.csproj", "{443D3C48-EBEC-4997-A849-7490B4BE714B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Containers", "Containers\Containers.csproj", "{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{443D3C48-EBEC-4997-A849-7490B4BE714B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{443D3C48-EBEC-4997-A849-7490B4BE714B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{443D3C48-EBEC-4997-A849-7490B4BE714B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

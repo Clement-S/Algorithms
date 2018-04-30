@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Regex
@@ -35,19 +38,22 @@ namespace Regex
             //// get calculated hash value
             //byte[] hash2 = sha.Hash;
 
-            // Display powers of 2 up to the exponent of 8:
-            foreach (int i in Power(2, 8))
-            {
-                Console.Write("{0} ", i);
-            }
-
-
-
-
+            string pattern = @"(\d{3})-(\d{3}-\d{4})";
+            string input = "212-555-6666 906-932-1111 415-222-3333 425-888-9999";
+            MatchCollection matches = System.Text.RegularExpressions.Regex.Matches(input, pattern);
+            var results = (from Match m in matches select m.Groups[2]).ToList();
+            
+            foreach(var result in results)
+                Console.WriteLine(result);
+            //foreach (Match match in matches)
+            //{
+            //    Console.WriteLine("Area Code:        {0}", match.Groups[1].Value);
+            //    Console.WriteLine("Telephone number: {0}", match.Groups[2].Value);
+            //    Console.WriteLine();
+            //}
+            
 
             Console.ReadLine();
-
-
         }
 
 

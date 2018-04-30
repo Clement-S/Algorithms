@@ -16,8 +16,5 @@
         public T Data;
 
         public Node<T> Next;
-
-
-
     }
 }
