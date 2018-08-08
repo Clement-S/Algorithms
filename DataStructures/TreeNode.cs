@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    class TreeNode<T>
+    public class TreeNode
     {
-        T Data;
+        public int Data;
 
-        TreeNode<T> LeftNode;
+        public TreeNode LeftNode;
 
-        TreeNode<T> RightNode;
+        public TreeNode RightNode;
     
-        public TreeNode(T data)
+        public TreeNode(int data)
         {
             Data = data;
             LeftNode = null;

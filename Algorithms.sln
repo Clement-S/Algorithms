@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regex", "Regex\Regex.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Containers", "Containers\Containers.csproj", "{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialisee", "Serialisee\Serialisee.csproj", "{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +41,15 @@ Global
 		{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DE6EF52-B773-4AD6-B002-2375418D1C07}
 	EndGlobalSection
 EndGlobal

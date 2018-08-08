@@ -5,10 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace DataStructures
 {
     class Program
     {
+        static int value { get; set; } = 0;
+
         static void Main(string[] args)
         {
 #if RELEASE
@@ -191,32 +194,39 @@ namespace DataStructures
 #endif
             #region MyQueue
 
-            MyQueue<int> myQueue = new MyQueue<int>();
-            myQueue.Enqueue(30);
-            myQueue.Enqueue(74);
-            myQueue.Enqueue(12);
-            myQueue.Enqueue(342);
+            //MyQueue<int> myQueue = new MyQueue<int>();
+            //myQueue.Enqueue(30);
+            //myQueue.Enqueue(74);
+            //myQueue.Enqueue(12);
+            //myQueue.Enqueue(342);
 
-            foreach(var value in myQueue)
-                Console.WriteLine(value);
+            var name = "Seyi";
+            //name.OutputMe("adedeji", 75);
 
-            Console.WriteLine();
-            Console.WriteLine("After Dequeue");
 
-            myQueue.Dequeue();
-            myQueue.Dequeue();
 
-            foreach (var value in myQueue)
-                Console.WriteLine(value);
+            //foreach(var value in myQueue)
+            //    Console.WriteLine(value);
 
-            Console.WriteLine();
+            value = 78;
+            Console.WriteLine(value);
 
-            Console.WriteLine($"Peek value is {myQueue.Peek()}");
+            //Console.WriteLine("After Dequeue");
 
-            Console.WriteLine("Queue status after peeking");
+            //myQueue.Dequeue();
+            //myQueue.Dequeue();
 
-            foreach (var value in myQueue)
-                Console.WriteLine(value);
+            //foreach (var value in myQueue)
+            //    Console.WriteLine(value);
+
+            //Console.WriteLine();
+
+            //Console.WriteLine($"Peek value is {myQueue.Peek()}");
+
+            //Console.WriteLine("Queue status after peeking");
+
+            //foreach (var value in myQueue)
+            //    Console.WriteLine(value);
 
             #endregion
 

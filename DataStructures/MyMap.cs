@@ -29,6 +29,13 @@
             return Keys;
         }
 
+        /// <summary>
+        /// Puts the specified key.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The value.</param>
+        /// <exception cref="ArgumentNullException">Key or Value is null</exception>
+        /// <exception cref="ArgumentException">Duplicates not allowed</exception>
         public void Put(K key, V value)
         {
             if (key == null || value == null)
