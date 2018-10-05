@@ -208,8 +208,8 @@ namespace DataStructures
             //foreach(var value in myQueue)
             //    Console.WriteLine(value);
 
-            value = 78;
-            Console.WriteLine(value);
+            // value = 78;
+            // Console.WriteLine(value);
 
             //Console.WriteLine("After Dequeue");
 
@@ -228,6 +228,31 @@ namespace DataStructures
             //foreach (var value in myQueue)
             //    Console.WriteLine(value);
 
+            #endregion
+
+            #region BinarySearchTree
+
+            var bst = new BinarySearchTree();
+            bst.Insert(5);
+            bst.Insert(8);
+            bst.Insert(2);
+            bst.Insert(7);
+            bst.Insert(16);
+
+            bst.InOrderTreeTraversal(bst.Root);
+            Console.WriteLine($" The root of this tree is {bst.Root.Data}");
+
+            var foundNode = bst.Find(7);
+
+            if (foundNode != null)
+                Console.WriteLine("Found node");
+            else
+            {
+                Console.WriteLine("Node doesnt exist");
+            }
+
+            bst.Delete(7);
+            bst.InOrderTreeTraversal(bst.Root);
             #endregion
 
             Console.ReadLine();
