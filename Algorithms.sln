@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{EF35B357-83E8-4AE4-8F03-96030986025C}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Containers", "Containers\Containers.csproj", "{FDAE75F1-8D93-4DDD-8EE2-FA6982676E77}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialisee", "Serialisee\Serialisee.csproj", "{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeserializeJson", "..\..\Users\coade\source\repos\Testing\Testing\DeserializeJson.csproj", "{9016670E-8597-480F-B56B-EA05F170F8D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9016670E-8597-480F-B56B-EA05F170F8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9016670E-8597-480F-B56B-EA05F170F8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9016670E-8597-480F-B56B-EA05F170F8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9016670E-8597-480F-B56B-EA05F170F8D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
