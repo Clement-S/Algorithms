@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Containers", "Containers\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialisee", "Serialisee\Serialisee.csproj", "{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeserializeJson", "..\..\Users\coade\source\repos\Testing\Testing\DeserializeJson.csproj", "{9016670E-8597-480F-B56B-EA05F170F8D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeserialiseJson", "DeserialiseJson\DeserialiseJson.csproj", "{8E0A3237-2219-4C25-86DC-8CA934612DBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9016670E-8597-480F-B56B-EA05F170F8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9016670E-8597-480F-B56B-EA05F170F8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9016670E-8597-480F-B56B-EA05F170F8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9016670E-8597-480F-B56B-EA05F170F8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E0A3237-2219-4C25-86DC-8CA934612DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0A3237-2219-4C25-86DC-8CA934612DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0A3237-2219-4C25-86DC-8CA934612DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0A3237-2219-4C25-86DC-8CA934612DBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
