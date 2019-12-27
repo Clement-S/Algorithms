@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Containers", "Containers\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialisee", "Serialisee\Serialisee.csproj", "{486D9E4B-5BAE-4E09-B0FB-0722F332B8BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeserialiseJson", "DeserialiseJson\DeserialiseJson.csproj", "{8E0A3237-2219-4C25-86DC-8CA934612DBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeserealiseJsonFootball", "DeserialiseJson\DeserealiseJsonFootball.csproj", "{8E0A3237-2219-4C25-86DC-8CA934612DBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
